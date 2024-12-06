@@ -21,7 +21,7 @@ from modules.decoder import Decoder
 def train_decoder(args):
     print('train decoder')
     num_gpus = torch.cuda.device_count()
-    print('number of avilable gpus: %d' % num_gpus)
+    print('number of available gpus: %d' % num_gpus)
 
     # Constrain most sources of randomness
     torch.manual_seed(args.seed)
